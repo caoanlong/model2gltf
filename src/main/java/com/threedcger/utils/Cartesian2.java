@@ -1,26 +1,13 @@
 package com.threedcger.utils;
 
+import lombok.Data;
+
 import java.util.List;
 
+@Data
 public class Cartesian2 {
     private double x;
     private double y;
-
-    public double getX() {
-        return x;
-    }
-
-    public void setX(double x) {
-        this.x = x;
-    }
-
-    public double getY() {
-        return y;
-    }
-
-    public void setY(double y) {
-        this.y = y;
-    }
 
     public Cartesian2() {
         this.x = 0.0;
