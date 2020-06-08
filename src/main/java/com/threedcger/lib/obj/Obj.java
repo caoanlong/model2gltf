@@ -238,7 +238,9 @@ public class Obj {
     }
 
     public void setMtlFileNames(Collection<? extends String> mtlFileNames) {
-        this.mtlFileNames = Collections.unmodifiableList(new ArrayList<String>(mtlFileNames));
+        if (mtlFileNames != null) {
+            this.mtlFileNames = Collections.unmodifiableList(new ArrayList<String>(mtlFileNames));
+        }
     }
 
     private List<ObjGroup> getGroupsInternal(Collection<? extends String> groupNames) {

@@ -2,117 +2,105 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="082dcab3-2e36-43f4-9ff6-b8a8c80047bc" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_54.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_3_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_errorprone_error_prone_annotations_2_3_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_failureaccess_1_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_29_0_jre.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_listenablefuture_9999_0_empty_to_avoid_conflict_with_guava.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_j2objc_j2objc_annotations_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_checkerframework_checker_qual_2_11_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/ObjLoader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/Accessor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/Asset.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/Buffer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/BufferView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/GlTF.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/Image.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/Material.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/Mesh.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/Node.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/NormalTextureInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/OcclusionTextureInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/PbrMetallicRoughness.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/Primitive.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/Sampler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/Scene.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/Texture.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/TextureInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/FloatTuple.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/Obj.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/ObjFace.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/ObjFaceParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/ObjGroup.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/utils/IO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_10_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_10_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_10_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/AbstractAccessorData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/AccessorByteData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/AccessorData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/AccessorDatas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/AccessorFloatData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/AccessorIntData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/AccessorModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/AccessorModels.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/AccessorShortData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/AccessorSparseUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/Accessors.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/BufferModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/BufferViewModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/Buffers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/ByteBufferInputStream.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/CameraModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/Cameras.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/DefaultAssetCreator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/ElementType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/GltfAsset.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/GltfAssetWriter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/GltfConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/GltfModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/GltfModelWriter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/GltfReference.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/GltfReferenceResolver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/GltfUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/GltfWriter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/ImageModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/ImageReaders.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/IntBuffers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/MaterialModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/MaterialModelHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/MaterialStructure.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/Materials.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/MeshModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/MeshPrimitiveModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/MimeTypes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/NodeModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/NumberArrays.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/SceneModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/Suppliers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/TextureModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/UriResolvers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/UriStrings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/model/AccessorSparse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/model/AccessorSparseIndices.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/model/AccessorSparseValues.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/model/Animation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/model/AnimationChannel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/model/AnimationChannelTarget.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/model/AnimationSampler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/model/Camera.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/model/CameraOrthographic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/model/CameraPerspective.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/BufferStructure.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/BufferStructureBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/BufferStructureGltf.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/BufferStructures.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/Convert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/MtlDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/MtlMaterialHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/ObjData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/ObjFaces.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/ObjNormals.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/ObjUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/TextureHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/utils/MathUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/utils/Optionals.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/utils/Utils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model2gltf.iml" beforeDir="false" afterPath="$PROJECT_DIR$/model2gltf.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/threedcger/ThreedcgerApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/ThreedcgerApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/GltfCreator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/MtlLoader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/Obj2glTF.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/ObjLoader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/TextureLoader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/model/Extensions.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/model/KHR_materials_pbrSpecularGlossiness.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/model/Material.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/model/Mesh.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/model/Mtl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/model/Node.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/model/ObjData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/model/Options.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/model/OverridingTextures.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/model/PbrMetallicRoughness.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/model/Primitive.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/model/Texture.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/model/TextureOptions.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/model/gltf/Asset.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/model/gltf/BufferState.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/model/gltf/Gltf.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/model/gltf/Scene.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/threedcger/utils/Axis.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/threedcger/utils/CMath.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/threedcger/utils/CTools.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/threedcger/utils/Cartesian2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/threedcger/utils/Cartesian3.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/threedcger/utils/CoplanarPolygonGeometryLibrary.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/threedcger/utils/Earcut.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/threedcger/utils/M3Result.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/threedcger/utils/Matrix3.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/threedcger/utils/Matrix4.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/threedcger/utils/OrientedBoundingBox.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/threedcger/utils/PolygonPipeline.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/threedcger/utils/WindingOrder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/ObjLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/ObjLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/Accessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/model/Accessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/Asset.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/model/Asset.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/Buffer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/model/Buffer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/BufferView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/model/BufferView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/GlTF.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/model/GlTF.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/Image.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/model/Image.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/Material.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/model/Material.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/Mesh.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/model/Mesh.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/model/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/NormalTextureInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/model/NormalTextureInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/OcclusionTextureInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/model/OcclusionTextureInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/PbrMetallicRoughness.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/model/PbrMetallicRoughness.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/Primitive.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/model/Primitive.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/Sampler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/model/Sampler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/Scene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/model/Scene.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/Texture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/model/Texture.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/TextureInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/model/TextureInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/Obj.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/Obj.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/threedcger/utils/IO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/threedcger/utils/IO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/threedcger/ThreedcgerApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/threedcger/ThreedcgerApp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/threedcger/lib/obj/GltfCreator$PrimitiveInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/threedcger/lib/obj/GltfCreator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/threedcger/lib/obj/MtlLoader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/threedcger/lib/obj/Obj2glTF.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/threedcger/lib/obj/ObjLoader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/threedcger/lib/obj/TextureLoader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/threedcger/lib/obj/model/Extensions.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/threedcger/lib/obj/model/KHR_materials_pbrSpecularGlossiness.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/threedcger/lib/obj/model/Material.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/threedcger/lib/obj/model/Mesh.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/threedcger/lib/obj/model/Mtl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/threedcger/lib/obj/model/Node.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/threedcger/lib/obj/model/ObjData.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/threedcger/lib/obj/model/Options.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/threedcger/lib/obj/model/OverridingTextures.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/threedcger/lib/obj/model/PbrMetallicRoughness.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/threedcger/lib/obj/model/Primitive.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/threedcger/lib/obj/model/Texture.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/threedcger/lib/obj/model/TextureOptions.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/threedcger/lib/obj/model/gltf/Asset.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/threedcger/lib/obj/model/gltf/BufferState.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/threedcger/lib/obj/model/gltf/Gltf.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/threedcger/lib/obj/model/gltf/Scene.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/threedcger/utils/Axis.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/threedcger/utils/CMath.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/threedcger/utils/CTools.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/threedcger/utils/Cartesian2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/threedcger/utils/Cartesian3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/threedcger/utils/CoplanarPolygonGeometryLibrary.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/threedcger/utils/Earcut$Node.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/threedcger/utils/Earcut.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/threedcger/utils/M3Result.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/threedcger/utils/Matrix3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/threedcger/utils/Matrix4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/threedcger/utils/OrientedBoundingBox.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/threedcger/utils/PolygonPipeline.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/threedcger/utils/WindingOrder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -124,14 +112,56 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ThreedcgerApp.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/ThreedcgerApp.java">
+      <file leaf-file-name="Convert.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/Convert.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
-              <caret line="13" column="33" lean-forward="true" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
+            <state relative-caret-position="245">
+              <caret line="83" column="65" selection-start-line="83" selection-start-column="61" selection-end-line="83" selection-end-column="65" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ObjLoader.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/ObjLoader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="293">
+              <caret line="34" column="47" selection-start-line="34" selection-start-column="47" selection-end-line="34" selection-end-column="47" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ThreedcgerApp.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/ThreedcgerApp.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="139">
+              <caret line="7" column="28" lean-forward="true" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MtlDto.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/MtlDto.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="116">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MtlMaterialHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/MtlMaterialHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="402">
+              <caret line="39" column="34" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -148,7 +178,25 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>getTexture</find>
+      <find>ReadableObj</find>
+      <find>DefaultAccessorModel</find>
+      <find>getNumAccessors</find>
+      <find>DefaultObjFace</find>
+      <find>stripFileNameExtension</find>
+      <find>DefaultTextureModel</find>
+      <find>createMaterialModel</find>
+      <find>GltfAssetV2</find>
+      <find>GltfModelV2</find>
+      <find>setMtlFileNames</find>
     </findStrings>
+    <replaceStrings>
+      <replace>Obj</replace>
+      <replace>AccessorModel</replace>
+      <replace>ObjFace</replace>
+      <replace>TextureModel</replace>
+      <replace>GltfAsset</replace>
+      <replace>GltfModel</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -156,57 +204,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/model/gltf/Scene.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/MtlLoader.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/model/gltf/GltfPrimitives.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/Obj2glTF.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/model/KHR_materials_unlit.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/model/Extensions.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/model/KHR_materials_pbrSpecularGlossiness.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/model/Texture.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/model/PbrMetallicRoughness.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/model/Mtl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/model/gltf/BufferState.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/model/gltf/Image.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/model/gltf/Extras.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/model/gltf/GltfImage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/model/gltf/GltfTexture.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/model/gltf/GltfMesh.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/model/gltf/GltfNode.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/AnimationModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/threedcger/utils/MathUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/MeshPrimitiveModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/MeshModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/threedcger/utils/Utils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/Suppliers.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/NodeModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/model/CameraOrthographic.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/model/CameraPerspective.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/model/Camera.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/CameraModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/ImageModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/SceneModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/TextureModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/model/Sampler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/model/AccessorSparse.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/model/AccessorSparseValues.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/model/AccessorSparseIndices.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/model/Accessor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/AccessorSparseUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/model/Primitive.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/model/Node.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/Materials.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/model/Material.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/model/PbrMetallicRoughness.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/MaterialModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/Cameras.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/model/GlTF.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/GltfModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/model/TextureInfo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/MaterialStructure.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/model/OcclusionTextureInfo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/model/NormalTextureInfo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/MaterialModelHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/UriStrings.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/MimeTypes.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/ImageReaders.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/model/Image.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/model/BufferView.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/model/gltf/Attributes.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/model/gltf/Sampler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/model/gltf/GltfBuffer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/model/gltf/GltfBufferView.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/model/gltf/Accessor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/GltfCreator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/model/gltf/Gltf.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/Mesh.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/Primitive.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/Scene.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/Node.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/Accessor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/BufferView.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/Buffer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/TextureInfo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/PbrMetallicRoughness.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/NormalTextureInfo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/OcclusionTextureInfo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/Material.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/Texture.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/Image.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/Sampler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/Asset.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/GlTF.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/threedcger/utils/IO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/DefaultObj.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/FloatTuple.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/ObjFace.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/ObjGroup.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/GltfUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/GltfWriter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/GltfModelWriter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/MtlDto.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/ObjUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/Obj.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/ObjFaceParser.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/threedcger/lib/ObjLoader.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/threedcger/ThreedcgerApp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/GltfAssetWriter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/DefaultAssetCreator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/MtlMaterialHandler.java" />
       </list>
     </option>
   </component>
@@ -223,6 +271,22 @@
       </MavenImportingSettings>
     </option>
   </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="model2gltf" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="model2gltf" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
@@ -238,8 +302,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -290,22 +352,15 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="threedcger" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="gltf" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="model2gltf" type="b2602c69:ProjectViewProjectNode" />
-              <item name="model2gltf" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="threedcger" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="obj" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -317,7 +372,13 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.threedcger.lib.gltf" />
+      <recent name="com.threedcger.utils" />
+      <recent name="com.threedcger.lib.gltf.model" />
       <recent name="com.threedcger.lib.obj" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -392,12 +453,16 @@
       <updated>1589461075863</updated>
       <workItem from="1589461077113" duration="13693000" />
       <workItem from="1589478065830" duration="10868000" />
-      <workItem from="1590252757242" duration="12770000" />
+      <workItem from="1590252757242" duration="38048000" />
+      <workItem from="1590417931832" duration="15176000" />
+      <workItem from="1591338036955" duration="3530000" />
+      <workItem from="1591517651946" duration="560000" />
+      <workItem from="1591541301328" duration="5568000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37331000" />
+    <option name="totallyTimeSpent" value="87443000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -410,27 +475,27 @@
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info active="true" anchor="right" id="Maven Projects" order="3" visible="true" weight="0.13095239" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3296593" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27440476" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19642857" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.3006012" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.31563127" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3296593" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -441,475 +506,378 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="35" />
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="glTF" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/model/gltf/Scene.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/MeshModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="-1056">
+          <caret line="34" column="3" lean-forward="true" selection-start-line="34" selection-start-column="3" selection-end-line="34" selection-end-column="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/model/gltf/GltfBufferView.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/utils/Utils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+        <state relative-caret-position="692">
+          <caret line="87" column="5" selection-start-line="87" selection-start-column="5" selection-end-line="87" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/GltfCreator.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/Suppliers.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="73" column="44" selection-start-line="73" selection-start-column="44" selection-end-line="73" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#splitIncompatibleMaterials#0;class#GltfCreator#0" />
-            <element signature="method#getSplitMaterialName#0;class#GltfCreator#0" />
-            <element signature="method#getMaterialByName#0;class#GltfCreator#0" />
-            <element signature="method#getMaterialIndex#0;class#GltfCreator#0" />
-            <element signature="method#addTexture#0;class#GltfCreator#0" />
-            <element signature="method#getTexture#0;class#GltfCreator#0" />
-            <element signature="method#resolveTextures#0;class#GltfCreator#0" />
-            <element signature="method#addGltfMaterial#0;class#GltfCreator#0" />
-            <element signature="method#cloneMaterial#0;class#GltfCreator#0" />
-            <element signature="method#primitiveInfoMatch#0;class#GltfCreator#0" />
-            <element signature="method#requiresUint32Indices#0;class#GltfCreator#0" />
-            <element signature="method#addVertexAttribute#0;class#GltfCreator#0" />
-            <element signature="method#addIndexArray#0;class#GltfCreator#0" />
-            <element signature="method#getOrCreateGltfMaterial#0;class#GltfCreator#0" />
-            <element signature="method#addPrimitive#0;class#GltfCreator#0" />
-            <element signature="method#addMesh#0;class#GltfCreator#0" />
-            <element signature="method#addNode#0;class#GltfCreator#0" />
-            <element signature="class#PrimitiveInfo#0;class#GltfCreator#0" />
-          </folding>
+        <state relative-caret-position="264">
+          <caret line="57" column="52" lean-forward="true" selection-start-line="57" selection-start-column="52" selection-end-line="57" selection-end-column="52" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/model/KHR_materials_pbrSpecularGlossiness.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/NodeModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="13" column="40" lean-forward="true" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="647">
+          <caret line="177" lean-forward="true" selection-start-line="177" selection-end-line="177" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/model/KHR_materials_unlit.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/model/CameraOrthographic.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+        <state relative-caret-position="423">
+          <caret line="32" column="4" lean-forward="true" selection-start-line="32" selection-start-column="4" selection-end-line="33" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/model/Mesh.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/model/CameraPerspective.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+        <state relative-caret-position="667">
+          <caret line="23" column="6" lean-forward="true" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/model/Mtl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="11" column="53" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/model/PbrMetallicRoughness.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="13" column="35" lean-forward="true" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/model/Options.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="12" column="46" lean-forward="true" selection-start-line="12" selection-start-column="46" selection-end-line="12" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/model/ObjData.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/model/Camera.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="261">
-          <caret line="9" column="29" lean-forward="true" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/MtlLoader.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/CameraModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1508">
-          <caret line="61" column="17" selection-start-line="61" selection-start-column="8" selection-end-line="61" selection-end-column="17" />
-          <folding>
-            <element signature="e#3188#3718#0" />
-            <element signature="e#3723#8233#0" />
-            <element signature="e#8238#8476#0" />
-            <element signature="e#8481#8663#0" />
-            <element signature="e#8668#9379#0" />
-            <element signature="e#9384#12270#0" />
-            <element signature="e#12275#12773#0" />
-            <element signature="e#12778#13068#0" />
-            <element signature="e#13073#13603#0" />
-            <element signature="e#13608#16361#0" />
-            <element signature="e#16366#19290#0" />
-            <element signature="e#19295#22720#0" />
-            <element signature="e#22725#25796#0" />
-            <element signature="e#25801#28264#0" />
-            <element signature="e#28269#29123#0" />
-            <element signature="e#29128#30438#0" />
-            <element signature="e#30443#31328#0" />
-            <element signature="e#31333#31613#0" />
-            <element signature="e#31618#31915#0" />
-            <element signature="e#31920#33017#0" />
-            <element signature="e#33022#33160#0" />
-          </folding>
+        <state relative-caret-position="435">
+          <caret line="40" column="19" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/Obj2glTF.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/ImageModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        <state relative-caret-position="841">
+          <caret line="43" column="21" lean-forward="true" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/ObjLoader.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/SceneModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1529">
-          <caret line="157" selection-start-line="157" selection-end-line="157" />
-          <folding>
-            <element signature="e#3641#7020#0" />
-            <element signature="e#7025#8152#0" />
-          </folding>
+        <state relative-caret-position="249">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/model/TextureOptions.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/TextureModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="7" column="35" lean-forward="true" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+        <state relative-caret-position="1537">
+          <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/model/Primitive.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/model/Sampler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="11" column="33" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="33" />
+        <state relative-caret-position="3712">
+          <caret line="136" column="6" lean-forward="true" selection-start-line="136" selection-start-column="6" selection-end-line="136" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/model/OverridingTextures.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/model/AccessorSparseValues.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="11" column="35" lean-forward="true" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+        <state relative-caret-position="140">
+          <caret line="23" column="4" lean-forward="true" selection-start-line="23" selection-start-column="4" selection-end-line="32" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/model/Material.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/model/AccessorSparseIndices.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="19" column="50" lean-forward="true" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
+        <state relative-caret-position="3422">
+          <caret line="124" column="7" lean-forward="true" selection-start-line="124" selection-start-column="7" selection-end-line="124" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/model/Extensions.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/model/AccessorSparse.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="4" column="5" lean-forward="true" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+        <state relative-caret-position="2088">
+          <caret line="74" column="27" lean-forward="true" selection-start-line="74" selection-start-column="27" selection-end-line="74" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/model/gltf/Gltf.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/model/Accessor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="881">
-          <caret line="36" column="54" lean-forward="true" selection-start-line="36" selection-start-column="54" selection-end-line="36" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="8642">
+          <caret line="318" column="7" lean-forward="true" selection-start-line="318" selection-start-column="7" selection-end-line="318" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/model/gltf/Accessor.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/AccessorSparseUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="13" column="31" lean-forward="true" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
+        <state relative-caret-position="8927">
+          <caret line="340" column="48" lean-forward="true" selection-start-line="340" selection-start-column="48" selection-end-line="340" selection-end-column="48" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/model/gltf/Asset.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/model/Node.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="7" column="27" lean-forward="true" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+        <state relative-caret-position="522">
+          <caret line="18" column="32" lean-forward="true" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/model/gltf/BufferState.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/model/Material.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="712">
-          <caret line="28" column="53" selection-start-line="28" selection-start-column="53" selection-end-line="28" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="446">
+          <caret line="66" column="7" lean-forward="true" selection-start-line="66" selection-start-column="7" selection-end-line="66" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/model/gltf/Attributes.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/model/PbrMetallicRoughness.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="5423">
+          <caret line="203" column="50" lean-forward="true" selection-start-line="203" selection-start-column="50" selection-end-line="203" selection-end-column="50" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/model/gltf/Extras.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/Materials.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="600">
+          <caret line="32" column="65" lean-forward="true" selection-start-line="32" selection-start-column="65" selection-end-line="32" selection-end-column="65" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/model/gltf/GltfBuffer.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/Cameras.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        <state relative-caret-position="406">
+          <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/Node.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/model/GlTF.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="10" column="27" lean-forward="true" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+        <state relative-caret-position="380">
+          <caret line="22" column="39" lean-forward="true" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/BufferView.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/MaterialModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="10" column="31" lean-forward="true" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+        <state relative-caret-position="-447">
+          <caret line="35" column="19" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/Accessor.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/model/TextureInfo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="5" column="23" lean-forward="true" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+        <state relative-caret-position="626">
+          <caret line="81" column="5" selection-start-line="81" selection-start-column="5" selection-end-line="81" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/Primitive.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/MaterialStructure.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="2721">
+          <caret line="137" column="26" selection-start-line="137" selection-start-column="26" selection-end-line="137" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/Scene.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/model/OcclusionTextureInfo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="6" column="24" lean-forward="true" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+        <state relative-caret-position="626">
+          <caret line="45" column="5" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/PbrMetallicRoughness.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/model/NormalTextureInfo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="11" column="41" lean-forward="true" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="626">
+          <caret line="37" column="5" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/NormalTextureInfo.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/GltfModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+        <state relative-caret-position="20835">
+          <caret line="775" column="40" lean-forward="true" selection-start-line="775" selection-start-column="40" selection-end-line="775" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/OcclusionTextureInfo.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/MaterialModelHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+        <state relative-caret-position="315">
+          <caret line="36" column="38" lean-forward="true" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/Texture.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/ImageReaders.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="6" column="24" lean-forward="true" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+        <state relative-caret-position="696">
+          <caret line="24" column="31" lean-forward="true" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/Image.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/MimeTypes.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="7" column="23" lean-forward="true" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+        <state relative-caret-position="2987">
+          <caret line="103" column="11" lean-forward="true" selection-start-line="103" selection-start-column="11" selection-end-line="103" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/Sampler.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/UriStrings.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+        <state relative-caret-position="2465">
+          <caret line="85" column="43" lean-forward="true" selection-start-line="85" selection-start-column="43" selection-end-line="85" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/Material.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/model/BufferView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="9" column="38" lean-forward="true" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+        <state relative-caret-position="404">
+          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/TextureInfo.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/GltfUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="10" column="4" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="11" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="128">
+          <caret line="16" column="65" lean-forward="true" selection-start-line="16" selection-start-column="65" selection-end-line="16" selection-end-column="65" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/Asset.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/GltfWriter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="47" column="50" lean-forward="true" selection-start-line="47" selection-start-column="50" selection-end-line="47" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/model/Image.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="348">
-          <caret line="12" column="4" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="13" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="13" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/GlTF.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/java/util/ArrayList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="8" column="19" lean-forward="true" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/utils/IO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="15" column="10" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/Buffer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="6" column="24" lean-forward="true" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/Mesh.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="10" column="28" lean-forward="true" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/ObjGroup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="564">
-          <caret line="36" column="4" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/ObjFaceParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="106" column="11" selection-start-line="106" selection-start-column="11" selection-end-line="106" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/FloatTuple.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="9" column="29" lean-forward="true" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/Obj.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#4711#5964#0" />
-            <element signature="e#6714#7109#0" />
-            <element signature="e#6855#6865#0" expanded="true" />
-            <element signature="method#getGroupInternal#0;class#Obj#0" />
-            <element signature="e#7349#7736#0" />
-            <element signature="e#7709#8318#0" />
-          </folding>
+        <state relative-caret-position="309">
+          <caret line="176" column="34" lean-forward="true" selection-start-line="176" selection-start-column="34" selection-end-line="176" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-420" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/ObjLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1015">
-          <caret line="35" column="44" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#read#0;class#ObjLoader#0" />
-            <element signature="method#parseLine#0;class#ObjLoader#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/ObjFace.java">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="232">
-          <caret line="8" column="32" lean-forward="true" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/ThreedcgerApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="13" column="33" lean-forward="true" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
+        <state relative-caret-position="139">
+          <caret line="7" column="28" lean-forward="true" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/GltfAsset.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="26" column="25" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/MtlMaterialHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="39" column="34" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/DefaultAssetCreator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="53" selection-start-line="53" selection-end-line="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/GltfModelWriter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="8" column="59" lean-forward="true" selection-start-line="8" selection-start-column="59" selection-end-line="8" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/GltfAssetWriter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-18">
+          <caret line="50" column="28" selection-start-line="50" selection-start-column="28" selection-end-line="50" selection-end-column="28" />
+          <folding>
+            <element signature="e#2191#2220#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/ObjUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="49" column="24" selection-start-line="49" selection-start-column="24" selection-end-line="49" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/Obj.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="33" column="14" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/MtlDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/gltf/model/Primitive.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/ObjLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="34" column="47" selection-start-line="34" selection-start-column="47" selection-end-line="34" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/threedcger/lib/obj/Convert.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="83" column="65" selection-start-line="83" selection-start-column="61" selection-end-line="83" selection-end-column="65" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

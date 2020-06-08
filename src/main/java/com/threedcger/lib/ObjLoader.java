@@ -1,14 +1,12 @@
 package com.threedcger.lib;
 
-import com.threedcger.lib.obj.Obj;
-import com.threedcger.lib.obj.ObjFace;
-import com.threedcger.lib.obj.ObjFaceParser;
+import com.threedcger.lib.gltf.GltfAsset;
+import com.threedcger.lib.gltf.GltfModel;
+import com.threedcger.lib.gltf.GltfModelWriter;
+import com.threedcger.lib.obj.*;
 import com.threedcger.utils.IO;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.net.URI;
 import java.nio.file.Paths;
 import java.util.*;
@@ -26,18 +24,34 @@ public class ObjLoader {
     private ObjFaceParser objFaceParser;
     private String lineBuffer = "";
 
-    public Obj load(String objUrl) throws IOException {
-        System.out.println(objUrl);
-        URI objUri = Paths.get(objUrl).toUri();
+    public void load(MtlDto mtlDto) throws IOException {
+        URI objUri = Paths.get(mtlDto.getObjUrl()).toUri();
         URI baseUri = IO.getParent(objUri);
         String objFileName = IO.extractFileName(objUri);
-        String baseName = IO.stripFileNameExtension(objFileName);
+        String baseName = stripFileNameExtension(objFileName);
         obj = new Obj();
         objFaceParser = new ObjFaceParser();
-        read(objUri);
-        return obj;
+        obj = read(objUri);
+        GltfAsset gltfAsset = new Convert().start(obj, baseName, baseUri, mtlDto);
+        GltfModel gltfModel = new GltfModel(gltfAsset);
+
+        GltfModelWriter gltfModelWriter = new GltfModelWriter();
+
+        String outUrl;
+        if (mtlDto.getGltfUrl() != null) {
+            outUrl = mtlDto.getGltfUrl();
+        } else {
+            outUrl = baseUri + baseName + ".gltf";
+        }
+        File outputFile = new File(outUrl);
+
+        File parentFile = outputFile.getParentFile();
+        if (parentFile != null) parentFile.mkdirs();
+
+        gltfModelWriter.write(gltfModel, outputFile);
+
     }
-    private void read(URI objUri) throws IOException {
+    private Obj read(URI objUri) throws IOException {
         InputStream inputStream = objUri.toURL().openStream();
         BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
         String line;
@@ -45,6 +59,7 @@ public class ObjLoader {
             parseLine(line);
         }
         reader.close();
+        return ObjUtils.convertToRenderable(obj);
     }
     private void parseLine(String line) throws IOException {
         line = line.trim();
@@ -121,5 +136,10 @@ public class ObjLoader {
             tokens.add(st.nextToken());
         }
         return tokens.toArray(new String[tokens.size()]);
+    }
+    private static String stripFileNameExtension(String fileName) {
+        int lastDotIndex = fileName.lastIndexOf('.');
+        if (lastDotIndex < 0) return fileName;
+        return fileName.substring(0, lastDotIndex);
     }
 }
