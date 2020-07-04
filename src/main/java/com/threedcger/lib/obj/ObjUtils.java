@@ -38,7 +38,7 @@ public class ObjUtils {
     public static Obj convertToRenderable(Obj input, Obj output) {
         Obj obj = triangulate(input);
         obj = makeTexCoordsUnique(obj);
-        obj = makeNormalsUnique(obj);
+//        obj = makeNormalsUnique(obj);
         return makeVertexIndexed(obj, output);
     }
 

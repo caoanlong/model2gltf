@@ -21,33 +21,36 @@ public class ObjLoader {
     private int texCoordCounter = 0;
     private int normalCounter = 0;
     private Obj obj;
-    private ObjFaceParser objFaceParser;
+    private ObjFaceParser objFaceParser = new ObjFaceParser();
+    private Integer count = 0;
     private String lineBuffer = "";
 
-    public void load(MtlDto mtlDto) throws IOException {
-        URI objUri = Paths.get(mtlDto.getObjUrl()).toUri();
+    public void load(List<MtlDto> mtlList, String objUrl) throws IOException {
+        load(mtlList, objUrl, null);
+    }
+    public void load(List<MtlDto> mtlList, String objUrl, String gltfUrl) throws IOException {
+        URI objUri = Paths.get(objUrl).toUri();
         URI baseUri = IO.getParent(objUri);
         String objFileName = IO.extractFileName(objUri);
         String baseName = stripFileNameExtension(objFileName);
         obj = new Obj();
-        objFaceParser = new ObjFaceParser();
         obj = read(objUri);
-        GltfAsset gltfAsset = new Convert().start(obj, baseName, baseUri, mtlDto);
+        GltfAsset gltfAsset = new Convert().start(obj, baseName, baseUri, mtlList);
         GltfModel gltfModel = new GltfModel(gltfAsset);
 
         GltfModelWriter gltfModelWriter = new GltfModelWriter();
 
         String outUrl;
-        if (mtlDto.getGltfUrl() != null) {
-            outUrl = mtlDto.getGltfUrl();
+        if (gltfUrl != null) {
+            outUrl = gltfUrl;
         } else {
             outUrl = baseUri + baseName + ".gltf";
         }
+
         File outputFile = new File(outUrl);
 
         File parentFile = outputFile.getParentFile();
         if (parentFile != null) parentFile.mkdirs();
-
         gltfModelWriter.write(gltfModel, outputFile);
 
     }
@@ -64,6 +67,8 @@ public class ObjLoader {
     private void parseLine(String line) throws IOException {
         line = line.trim();
         Matcher result = null;
+        List<String> elements = new ArrayList(Arrays.asList(line.split(" ")));
+        elements.remove(0);
 
         if (line.length() == 0 || '#' == line.charAt(0)) {
             // Don't process empty lines or comments
@@ -73,7 +78,8 @@ public class ObjLoader {
         } else if (line.matches("(?i)^g\\s+[\\s\\S]*")) {
             String s = line.substring(2).trim();
             String[] groupNames = readStrings(s);
-            obj.setActiveGroupNames(Arrays.asList(groupNames));
+            obj.setActiveGroupNames(new ArrayList<>(Arrays.asList(groupNames)));
+            count++;
         } else if (line.matches("(?i)^usemtl\\s+[\\s\\S]*")) {
             String materialName = line.substring(7).trim();
             obj.setActiveMaterialGroupName(materialName);
@@ -141,5 +147,32 @@ public class ObjLoader {
         int lastDotIndex = fileName.lastIndexOf('.');
         if (lastDotIndex < 0) return fileName;
         return fileName.substring(0, lastDotIndex);
+    }
+    // 三角化
+    private List<List<String>> triangulate(List<String> elements) {
+        List<List<String>> lists = new ArrayList<>();
+        if (elements.size() <= 3) {
+            lists.add(elements);
+        } else if (elements.size() == 4) {
+            List<String> list1 = new ArrayList<>();
+            list1.add(elements.get(0));
+            list1.add(elements.get(1));
+            list1.add(elements.get(2));
+            List<String> list2 = new ArrayList<>();
+            list2.add(elements.get(2));
+            list2.add(elements.get(3));
+            list2.add(elements.get(0));
+            lists.add(list1);
+            lists.add(list2);
+        } else {
+            for (int i = 1; i < elements.size() - 1; i++) {
+                List<String> list = new ArrayList<>();
+                list.add(elements.get(0));
+                list.add(elements.get(i));
+                list.add(elements.get(i + 1));
+                lists.add(list);
+            }
+        }
+        return lists;
     }
 }

@@ -1,4 +1,4 @@
-package com.threedcger.lib.obj;
+package com.threedcger.lib.gltf2;
 
 import lombok.Data;
 
@@ -12,6 +12,7 @@ public class MtlDto {
     private String color;
     private String map;
     private String emissive;
+    private Float emissiveIntensity;
     private String emissiveMap;
     private Float aoMapIntensity;
     private String aoMap;

@@ -4,13 +4,12 @@ import com.threedcger.lib.gltf.*;
 import com.threedcger.lib.gltf.model.*;
 import com.threedcger.utils.Optionals;
 
+import java.io.IOException;
 import java.net.URI;
 import java.nio.ByteBuffer;
 import java.nio.FloatBuffer;
 import java.nio.IntBuffer;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 import java.util.function.Function;
 
 public class Convert {
@@ -22,14 +21,26 @@ public class Convert {
 
     private GlTF glTF;
 
-    public GltfAsset start(Obj obj, String baseName, URI baseUri, MtlDto mtlDto) {
+    public GltfAsset start(Obj obj, String baseName, URI baseUri, List<MtlDto> mtlList) throws IOException {
         glTF = new GlTF();
         glTF.setAsset(createAsset());
-        mtlMaterialHandler = new MtlMaterialHandler(glTF, mtlDto);
+        mtlMaterialHandler = new MtlMaterialHandler(glTF, baseUri);
         bufferStructureBuilder = new BufferStructureBuilder();
-
-        List<Primitive> primitives = createPrimitives(obj, "obj");
-        assignMaterial(primitives);
+        List<Primitive> primitives = new ArrayList<>();
+        Set<Map.Entry<String, ObjGroup>> entries = obj.getGroupMap().entrySet();
+        int i = 0;
+        for (Map.Entry<String, ObjGroup> entry: entries) {
+            ObjGroup objGroup = entry.getValue();
+            if (objGroup.getFaces() != null && objGroup.getFaces().size() > 0) {
+                String name = "materialGroup_" + String.valueOf(i);
+                Obj materialObj = ObjUtils.groupToObj(obj, objGroup, null);
+                Primitive subPrimitive = createPrimitive(materialObj, name);
+                MtlDto mtlDto = mtlList.get(i);
+                assignMaterial(subPrimitive, mtlDto);
+                primitives.add(subPrimitive);
+                i++;
+            }
+        }
 
         String uri = baseName + ".bin";
         bufferStructureBuilder.createBufferModel(baseName, uri);
@@ -83,6 +94,11 @@ public class Convert {
     }
     private List<Primitive> createPrimitives(Obj obj, String name) {
         List<Primitive> primitives = new ArrayList<Primitive>();
+        Primitive primitive = createPrimitive(obj, name);
+        primitives.add(primitive);
+        return primitives;
+    }
+    private Primitive createPrimitive(Obj obj, String name) {
         Primitive primitive = new Primitive();
         primitive.setMode(GltfConstants.GL_TRIANGLES);
 
@@ -93,7 +109,6 @@ public class Convert {
                 createIndicesByteBuffer(obj, indicesComponentType)
         );
         primitive.setIndices(indicesAccessorIndex);
-
         bufferStructureBuilder.createArrayElementBufferViewModel(name + "_indices_bufferView");
 
         int positionsAccessorIndex = bufferStructureBuilder.getNumAccessorModels();
@@ -104,6 +119,7 @@ public class Convert {
                 Buffers.createByteBufferFrom(objVertices)
         );
         primitive.addAttributes("POSITION", positionsAccessorIndex);
+        bufferStructureBuilder.createArrayBufferViewModel(name + "_position_bufferView");
 
         boolean flipY = true;
         FloatBuffer objTexCoords = ObjData.getTexCoords(obj, 2, flipY);
@@ -115,6 +131,7 @@ public class Convert {
                     Buffers.createByteBufferFrom(objTexCoords)
             );
             primitive.addAttributes("TEXCOORD_0", texCoordsAccessorIndex);
+            bufferStructureBuilder.createArrayBufferViewModel(name + "_uv_bufferView");
         }
 
         FloatBuffer objNormals = ObjData.getNormals(obj);
@@ -126,10 +143,25 @@ public class Convert {
                     GltfConstants.GL_FLOAT, "VEC3",
                     Buffers.createByteBufferFrom(objNormals));
             primitive.addAttributes("NORMAL", normalsAccessorIndex);
+            bufferStructureBuilder.createArrayBufferViewModel(name + "_normal_bufferView");
         }
-        bufferStructureBuilder.createArrayBufferViewModel(name + "_attributes_bufferView");
+//        bufferStructureBuilder.createArrayBufferViewModel(name + "_attributes_bufferView");
 
-        primitives.add(primitive);
+        return primitive;
+    }
+    private List<Primitive> createPartPrimitives(Obj obj, String name) {
+        List<Primitive> primitives = new ArrayList<Primitive>();
+//        int maxNumVertices = 65536 - 3;
+//        List<Obj> parts = ObjSplitting.splitByMaxNumVertices(obj, maxNumVertices);
+//        for (int i = 0; i < parts.size(); i++) {
+//            Obj part = parts.get(i);
+//            String partName = name;
+//            if (parts.size() > 1) {
+//                partName += "_part_" + i;
+//            }
+//            Primitive primitive = createPrimitive(part, partName);
+//            primitives.add(primitive);
+//        }
         return primitives;
     }
     private static ByteBuffer createIndicesByteBuffer(Obj obj, int indicesComponentType) {
@@ -139,12 +171,18 @@ public class Convert {
         ByteBuffer indicesByteBuffer = IntBuffers.convertToByteBuffer(objIndices, indicesComponentSize);
         return indicesByteBuffer;
     }
-    private void assignMaterial(List<Primitive> primitives) {
-        Material material = mtlMaterialHandler.createMaterial();
+    private void assignMaterial(List<Primitive> primitives, MtlDto mtlDto) throws IOException {
+        Material material = mtlMaterialHandler.createMaterial(mtlDto);
         int materialIndex = Optionals.of(glTF.getMaterials()).size();
         glTF.addMaterials(material);
         for (Primitive primitive : primitives) {
             primitive.setMaterial(materialIndex);
         }
+    }
+    private void assignMaterial(Primitive primitive, MtlDto mtlDto) throws IOException {
+        Material material = mtlMaterialHandler.createMaterial(mtlDto);
+        int materialIndex = Optionals.of(glTF.getMaterials()).size();
+        glTF.addMaterials(material);
+        primitive.setMaterial(materialIndex);
     }
 }
