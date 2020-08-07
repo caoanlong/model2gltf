@@ -1,8 +1,10 @@
 package com.threedcger.lib;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.threedcger.lib.gltf.GltfAsset;
 import com.threedcger.lib.gltf.GltfModel;
 import com.threedcger.lib.gltf.GltfModelWriter;
+import com.threedcger.lib.gltf.model.GlTF;
 import com.threedcger.lib.obj.*;
 import com.threedcger.utils.IO;
 
@@ -28,7 +30,7 @@ public class ObjLoader {
     public void load(List<MtlDto> mtlList, String objUrl) throws IOException {
         load(mtlList, objUrl, null);
     }
-    public void load(List<MtlDto> mtlList, String objUrl, String gltfUrl) throws IOException {
+    public String load(List<MtlDto> mtlList, String objUrl, String gltfUrl) throws IOException {
         URI objUri = Paths.get(objUrl).toUri();
         URI baseUri = IO.getParent(objUri);
         String objFileName = IO.extractFileName(objUri);
@@ -51,8 +53,10 @@ public class ObjLoader {
 
         File parentFile = outputFile.getParentFile();
         if (parentFile != null) parentFile.mkdirs();
-        gltfModelWriter.write(gltfModel, outputFile);
-
+        GlTF gltf = gltfModelWriter.write(gltfModel, outputFile);
+        ObjectMapper objectMapper = new ObjectMapper();
+        String gltfJson = objectMapper.writeValueAsString(gltf);
+        return gltfJson;
     }
     private Obj read(URI objUri) throws IOException {
         InputStream inputStream = objUri.toURL().openStream();
